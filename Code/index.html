@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatabile" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pokemon Memory Quiz">
+        <meta name="keywords" content="Memory, Game, Api, Challenge">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Pokemon Memory Quiz</title>
+    </head>
+    <body>
+        <main class="quiz__container">
+            <header class="quiz__header">
+              <h1>
+                Pokémon
+                <img src="./styles/pokemonBall.png" width="45" height="39" alt="PokeBall">
+                Memory Quiz
+              </h1>
+              <div class="quiz__header--timer-container">
+                <p>Your time:</p>
+                <span id="timer" class="quiz__header--timer">00:00:00</span>
+                <input type="text" name="name" id="nameInput" placeholder="Enter name to start">
+              </div>
+              <button id="startQuizButton" class="hidden">New quiz!</button>
+            </header>
+            <div class="lds-ring hidden" id="loader">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <section class="quiz__board hidden">
+              <div id="quizBoard"></div>
+            </section>
+            <section class="highscore__container">
+              <h2 class="highscore__container--title">Latest scores</h2>
+              <ul id="scoreboard" class="highscore__list"></ul>
+            </section>
+          </main>
+          <script src="./script/script.js"></script>
+    </body>
+</html>
